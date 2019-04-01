@@ -238,7 +238,7 @@ $(document).ready(function () {
             var name = $('#name').val();
             var email = $('#email').val();
             var student_no = $('#student_no').val();
-            var branch = $('#branch').val();
+//            var branch = $('#branch').val();
             var year = $('#number').val();
             var course = $('#course').val();
             var contact = $('#contact_number').val();
@@ -246,8 +246,9 @@ $(document).ready(function () {
             var gender = $('input[name=inlineRadioOptions]:checked').val();
             var hostler = $('input[name=inlineRadioOption]:checked').val();
 
-            var datastring = 'name=' + name + '&email=' + email + '&student_no=' + student_no + '&branch=' + branch + '&year=' + year + '&course=' + course + '&contact=' + contact + '&gender=' + gender + '&hostler=' + hostler + '&bloodgroup=' + bg;
-
+            var datastring = 'name=' + name + '&email=' + email + '&student_no=' + student_no + '&year=' + year + '&course=' + course + '&contact=' + contact + '&gender=' + gender + '&hostler=' + hostler + '&bloodgroup=' + bg;
+            debugger
+            console.log(datastring);
             $('.loader').show();
 
             $.ajax({

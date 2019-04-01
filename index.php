@@ -247,7 +247,7 @@
                             <div class="form-group col-md-4">
                                 <div class="input-field">
                                     <i class="flaticon-heart prefix" style="display:inline"></i>
-                                    <input id="name" type="text" class="validate">
+                                    <input id="name" type="text" name="name" class="validate">
                                     <label for="name">Donor Name</label>
                                 </div>
                                 <span id="err_name" class="error"></span>
@@ -256,7 +256,7 @@
                         <div class="form-row row justify-content-center">
                             <div class="form-group col-md-8">
                                 <label class="font-weight-bold lab">Course:</label>
-                                <select class="browser-default" id="course">
+                                <select class="browser-default" id="course" name="course">
                                     <option value="" disabled >Choose your Course</option>
                                     <option value="B.Tech" selected>B.Tech</option>
                                     <option value="M.Tech">M.Tech</option>
@@ -280,7 +280,7 @@
             
                             <div class="form-group col-md-4">
                                 <label class="font-weight-bold lab">Blood Group:</label>
-                                <select class="browser-default">
+                                <select id="blood-group" class="browser-default" name="bloodgroup">
                                     <option value="" disabled >Choose your Blood Group</option>
                                     <option value="AP" selected>A+</option>
                                     <option value="AN">A-</option>
@@ -350,7 +350,7 @@
                     </div>
                     <div class="row justify-content-center">
                         
-                    <button class="btn col-md-2" id = 'register'>Register</button>
+                    <button class="btn col-md-2" id = 'register' type="submit">Register</button>
                     </div>
                 </form>
                 </div>
