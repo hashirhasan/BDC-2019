@@ -1,3 +1,11 @@
+function recaptchaCallback() {
+    $('#register').removeAttr('disabled');
+};
+
+function recaptchaexpired() {
+    $('#register').attr('disabled','disabled');
+};
+
 $(document).ready(function () {
 
     var bool_email = true;
@@ -8,18 +16,18 @@ $(document).ready(function () {
     function validate_student_no() {
         //check if its empty
         var student_no = $('#student_no').val();
-        var regex = /^([1][4-7]\d{5}[Dd]{0,1})$/; //add regex here
+        var regex = /^([1][5-8]\d{5}[Dd]{0,1})$/; //add regex here
         if (student_no == '') {
             $('#err_student_no').text('Student number cannot be empty');
             $('#err_student_no').fadeIn("2500").show();
-            //console.log('working');
+           
             return false;
         }
         //check whether its valid student number or not
         else if ((regex.test(student_no)) != true) {
             $('#err_student_no').text('Invalid student number');
             $('#err_student_no').fadeIn("2500").show();
-            //console.log('syudent_no');
+            
             return false;
         }
         else {
@@ -33,7 +41,7 @@ $(document).ready(function () {
 
         //check if its empty
         var name = $('#name').val();
-        console.log('working');
+      
         if (name == '') {
             $('#err_name').text('Name cannot be empty');
             $('#err_name').fadeIn("2500").show();
@@ -72,19 +80,23 @@ $(document).ready(function () {
         }
     }
 
-    function validate_contact_no() {
+    function validate_contact_number() {
         var contact = $('#contact_number').val();
+        
         var regex = /^([6-9]{1}[0-9]{9})$/;//add regex here
         //check if its empty
+        
         if (contact == '') {
-            $('#err_contact_no').text('Contact cannot be empty');
-            $('#err_contact_no').fadeIn("2500").show();
+          
+            $('#err_contact_number').text('Contact cannot be empty');
+            $('#err_contact_number').fadeIn("2500").show();
             return false;
         }
         //check if its valid or not
         else if ((regex.test(contact)) != true) {
-            $('#err_contact_no').text('Invalid contact number');
-            $('#err_contact_no').fadeIn("2500").show();
+           
+            $('#err_contact_number').text('Invalid contact number');
+            $('#err_contact_number').fadeIn("2500").show();
             return false;
         }
         else
@@ -126,10 +138,10 @@ $(document).ready(function () {
 
 
     $('#contact_number').focus(function () {
-        $('#err_contact_no').hide();
+        $('#err_contact_number').hide();
     });
     $('#contact_number').blur(function () {
-        if (validate_contact_no()) {
+        if (validate_contact_number()) {
             ajax_contact();
 
         }
@@ -164,9 +176,10 @@ $(document).ready(function () {
             cache: false,
             success: function (result) {
                 var result = $.parseJSON(result);
+                
                 if (result.status == 0) {
-                    $("#err_contact_no").text('Contact already exists');
-                    $("#err_contact_no").fadeIn("2500").show();
+                    $("#err_contact_number").text('Contact already exists');
+                    $("#err_contact_number").fadeIn("2500").show();
                     bool_contact = false;
                 }
                 else if (result.status == 1) {
@@ -190,7 +203,7 @@ $(document).ready(function () {
             success: function (result) {
                 console.log(result);
                 var result = $.parseJSON(result);
-                debugger
+               
                 if (result.status == 0) {
                     $("#err_student_no").text('Student number already exists');
                     $("#err_student_no").fadeIn("2500").show();
@@ -230,7 +243,7 @@ $(document).ready(function () {
         var test1 = validate_student_no();
         var test2 = validate_name();
         var test3 = validate_email();
-        var test4 = validate_contact_no();
+        var test4 = validate_contact_number();
 
 
         if (test1 && test2 && test3 && test4 && bool_contact && bool_email && bool_student_no) {
@@ -245,12 +258,18 @@ $(document).ready(function () {
             var bg = $('#blood-group').val();
             var gender = $('input[name=inlineRadioOptions]:checked').val();
             var hostler = $('input[name=inlineRadioOption]:checked').val();
-
-            var datastring = 'name=' + name + '&email=' + email + '&student_no=' + student_no + '&year=' + year + '&course=' + course + '&contact=' + contact + '&gender=' + gender + '&hostler=' + hostler + '&bloodgroup=' + bg;
-            debugger
-            console.log(datastring);
+//            var g_recaptcha_response=$('[name=g-recaptcha-response]').val();
+           
+             var response = grecaptcha.getResponse();
+            
+            var datastring = 'name=' + name + '&email=' + email + '&student_no=' + student_no + '&year=' + year + '&course=' + course + '&contact=' + contact + '&gender=' + gender + '&hostler=' + hostler + '&bloodgroup=' + bg + '&g-recaptcha-response='+response;
+                
+//            else{
+//                var datastring = 'name=' + name + '&email=' + email + '&student_no=' + student_no + '&year=' + year + '&course=' + course + '&contact=' + contact + '&gender=' + gender + '&hostler=' + hostler + '&bloodgroup=' + bg;
+//            }
+          
             $('.loader').show();
-
+//            debugger
             $.ajax({
                 type: "POST",
                 url: "registration.php",
@@ -258,12 +277,13 @@ $(document).ready(function () {
                 datatype: "json",
                 cache: false,
                 success: function (result) {
-
+                 
+                    
                     var result = $.parseJSON(result);
-                    console.log(result);
-
+//                     console.log(result);
+                    
                     if (result.status == 0) {
-                        $('.loader').hide();
+//                        $('.loader').hide();
 
                         swal({
                             title: 'Registered successfully',
@@ -285,14 +305,19 @@ $(document).ready(function () {
                             $("#err_email").fadeIn("2500").show();
                         }
                         if (result.contact != '') {
-                            $("#err_contact_no").text(result.contact);
-                            $("#err_contact_no").fadeIn("2500").show();
+                            $("#err_contact_number").text(result.contact);
+                            $("#err_contact_number").fadeIn("2500").show();
                         }
                         if (result.student_no != '') {
                             $("#err_student_no").text(result.student_no);
                             $("#err_student_no").fadeIn("2500").show();
                         }
-                        $('.loader').hide();
+                
+//                     swal('Registerd','you are successfully registered...please verify your email to login!','success'). then(function(){
+//  window.location = "registration.php";
+//             })
+
+//                        $('.loader').hide();
 
                     }
 

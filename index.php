@@ -18,10 +18,10 @@
     <link rel="stylesheet" type="text/css" href="css/hover-min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
    
 </head>
-    <body class="fp-responsive">
+    <body class="fp-auto-width-responsive">
             <!-- <div id="sdc">
                     <a href="http://www.silive.in" target="_blank" style="color: black;">
                       <span>Site Donated by</span>
@@ -35,8 +35,8 @@
                 
         <div class="section home" data-tooltip="Home">
           <div class="container-fluid slide-section">
-             <div class="back-elements-1"></div>
-            <div class="back-elements-2"></div>
+             <div class="back-elements-1 heartBeat"></div>
+            <div class="back-elements-2 heartBeat"></div>
             <div class="row justify-content-between no-gutter">
                 <div class="col-md-5 col-12 heading-first">
                     AJAY KUMAR GARG ENGINEERING COLLEGE
@@ -45,7 +45,7 @@
                    ROTARY CLUB INDIA, INDIA
                 </div>
             </div>
-            <div class="row justify-content-center landing">
+            <div class="row justify-content-center no-gutter landing">
                 <div class="col-md-4">
                    <h1 class="landing-title">
                        BLOOD
@@ -59,11 +59,18 @@
                    <h3 class="landing-text">9th April 2019</h3>
                    <h3 class="landing-text">MECHANICAL BLOCK</h3>
                 
-                   <button class="btn col-md-6 hvr-pulse-grow" href="#gallery">Donate</button>
+                   <a class="btn col-md-6 hvr-pulse-grow" href="#register">Donate</a>
                    
                 </div>
-                <div class="col-md-5 landing-back" data-tilt>
-                   <img src="assets/landing.png" class="landing-img">
+                <div class="col-md-5" style="overflow:-webkit-paged-y;" data-tilt  data-tilt-max="10" data-tilt-speed="200" data-tilt-perspective="300">
+                    <div class="landing-back" id="scene">
+                   <div class="layer" data-depth="0.6"><img src="assets/heart.png" class="landing-img heartBeat"></div>
+                   <div class="layer" data-depth="0.2"><img src="assets/blood-drop.svg" class=" drop1 "></div>
+                   <div class="layer" data-depth="0.2"><img src="assets/blood-drop.svg" class="drop2"></div>
+                <div class="layer" data-depth="0.2">
+                    <img src="assets/blood-drop.svg" class="drop3">
+                    </div>
+                </div>
                 </div>
             </div>
             </div>
@@ -71,8 +78,8 @@
     
         <div class="section fact" data-tooltip="Myths">
             <div class='facts'>FACTS</div>
-            <div class="back-elements-1"></div>
-            <div class="back-elements-2"></div>
+            <div class="back-elements-1 heartBeat"></div>
+            <div class="back-elements-2 heartBeat"></div>
             <div class="container">
                 <ul class="nav nav-tabs " id="myTab" role="tablist">
                     <li class="nav-item borderXwidth">
@@ -104,7 +111,7 @@
                     </div>
                     <div class="tab-pane fade" id="socialaware" role="tabpanel" aria-labelledby="profile-tab">
                         <h1 class="tabtitle">SOCIAL AWARENESS</h1>
-                        <img src="assets/social.png" class="img-fluid tab-img" data-tilt data-tilt-reset="false">
+                        <img src="assets/social-min1.png" class="img-fluid tab-img" data-tilt data-tilt-reset="false">
                         <div class="tabtext">
                             One single donation can be split into three separate parts, helping save or improve the lives of patients. Just three teaspoons
                             of blood can save the life of a premature baby. If you donate blood, you can help in saving lives of many
@@ -118,7 +125,7 @@
                     </div>
                     <div class="tab-pane fade" id="tathya" role="tabpanel" aria-labelledby="contact-tab">
                         <h1 class="tabtitle">TATHYA</h1>
-                        <img src="assets/aware.png" class="img-fluid tab-img" data-tilt data-tilt-reset="false">
+                        <img src="assets/aware1.png" class="img-fluid tab-img" data-tilt data-tilt-reset="false">
                         <span class="tabtext">
                             The average red blood cell transfusion is approximately 3 pints.
                             <br>
@@ -133,7 +140,7 @@
                     </div>
                     <div class="tab-pane fade" id="mythos" role="tabpanel" aria-labelledby="contact-tab">
                         <h1 class="tabtitle">MYTHOS</h1>
-                        <img src="assets/bloodbag.png" class="img-fluid tab-img" data-tilt data-tilt-reset="false">
+                        <img src="assets/bloodbag1.png" class="img-fluid tab-img" data-tilt data-tilt-reset="false">
                         <span class="tabtext">
                             Blood donation will take a lot of time.
                             <br>
@@ -152,23 +159,23 @@
     
         <div class="section gallery"   id="gallery" data-tooltip="Gallery">
     <div class="container-fluid ">
-        <div class="back-elements-1"></div>
-        <div class="back-elements-2"></div>
+        <div class="back-elements-1 heartBeat"></div>
+        <div class="back-elements-2 heartBeat"></div>
         <h1 class="section-heading">GALLERY</h1>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center no-gutter">
             <div class="col-md-6 col-10">
                 <div class="single-item">
                     <div>
-                        <img src="assets/gallery/1.JPG" alt="img" class="gallery-img">
+                        <img src="assets/gallery/1-min.png" alt="img" class="gallery-img">
                     </div>
                     <div>
-                        <img src="assets/gallery/2.jpg" class="gallery-img">
+                        <img src="assets/gallery/2-min.png" class="gallery-img">
                     </div>
                     <div>
-                        <img src="assets/gallery/3.JPG" class="gallery-img">
+                        <img src="assets/gallery/3-min.png" class="gallery-img">
                     </div>
                     <div>
-                        <img src="assets/gallery/4.JPG" class="gallery-img">
+                        <img src="assets/gallery/4-min.png" class="gallery-img">
                     </div>
                 </div>
             </div>
@@ -178,64 +185,89 @@
     
         <div class="section" data-tooltip="Team">
             <div class='facts'>TEAM</div>
-            <div class="back-elements-1" style="border-color: #000;"></div>
-            <div class="back-elements-2" style="border-color: #000;"></div>
+            <div class="back-elements-1 heartBeat" style="border-color: #000;"></div>
+            <div class="back-elements-2 heartBeat" style="border-color: #000;"></div>
     
          <h3 class="team-sub-heading">CONVENORS</h3>
-        <div class="row justify-content-center">
-            <div class="col-md-2 col-sm- team-member">
-                <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+        <div class="row justify-content-center no-gutter">
+            <div class="col-md-2 col-sm-5 col-5 team-member">
+                <img src="assets/parashar.jpg" class="team-img">
+                <span class="member-name" style="font-weight:800;">Dr. V.K.Prashar
+                    <hr>
+                </span>
             </div>
-            <div class="col-md-2 col-sm- team-member" >
-                <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+            <div class="col-md-2 col-sm-5 col-5 team-member" >
+                <img src="assets/con1.png" class="team-img">
+                <span class="member-name" style="font-weight:800;">Mitali Singh
+                    <hr>
+                </span>
             </div>
-            <div class="col-md-2 col-sm- team-member">
-                <img src="assets/meghna.jpg" class="team-img" >
-                <span class="member-name">Name</span>
+            <div class="col-md-2 col-sm-5 col-5 team-member">
+                <img src="assets/con2.png" class="team-img" >
+                <span class="member-name" style="font-weight:800;">Anurag Pratap
+                    <hr>
+                </span>
             </div>
-            <div class="col-md-2 col-sm- team-member">
-                <img src="assets/meghna.jpg" class="team-img" >
-                <span class="member-name">Name</span>
+            <div class="col-md-2 col-sm-5 col-5 team-member">
+                <img src="assets/con3.png" class="team-img" >
+                <span class="member-name" style="font-weight:800;">Akhil Gupta
+                    <hr>
+                </span>
             </div>
-            <div class="col-md-2 col-sm- team-member">
-                <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+            <div class="col-md-2 col-sm-5 col-5 team-member">
+                <img src="assets/con4.png" class="team-img">
+                <span class="member-name" style="font-weight:800;">Vatsalya Yadav
+                    <hr>
+                </span>
             </div>
         </div>
         <h3 class="team-sub-heading">WEB TEAM</h3>
-        <div class="row justify-content-center">
-            <div class="col-md-2 col-sm- team-member">
-                <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+        <div class="row justify-content-center no-gutter">
+            <div class="col-md-2 col-sm-5 col-5 team-member">
+                <img src="assets/meghna.png" class="team-img">
+                <span class="member-name" style="font-weight:800;">Meghna Gupta
+                    <hr>
+                </span>
+                <span class="member-name">UI/UX Developer</span>
             </div>
-            <div class="col-md-2 col-sm- team-member">
-                <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+            <div class="col-md-2 col-sm-5 col-5 team-member">
+                <img src="assets/suyash.jpeg" class="team-img">
+                <span class="member-name" style="font-weight:800;">Suyash Srivastava
+                    <hr>
+                </span>
+                <span class="member-name">Developer</span>
             </div>
-            <div class="col-md-2 col-sm- team-member">
-                <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name name</span>
+            <div class="col-md-2 col-sm-5 col-5 team-member">
+                <img src="assets/vinayak.png" class="team-img">
+                <span class="member-name" style="font-weight:800;">Vinayak Gupta
+                    <hr>
+                </span>
+                <span class="member-name">UI/UX Developer</span>
             </div>
-            <div class="col-md-2 col-sm- team-member">
-                <img src="assets/meghna.jpg" class="team-img">
-                <span class="member-name">Name</span>
+            <div class="col-md-2 col-sm-5 col-5 team-member">
+                <img src="assets/hashir.png" class="team-img">
+                <span class="member-name" style="font-weight:800;">Hashir Hasan
+                    <hr>
+                </span>
+                <span class="member-name">Developer</span>
             </div>
-            <div class="col-md-2 col-sm- team-member">
-                <img src="assets/meghna.jpg" class="team-img" >
-                <span class="member-name">Name</span>
+            <div class="col-md-2 col-sm-5 col-5 team-member">
+                <img src="assets/param.jpg" class="team-img" >
+                <span class="member-name" style="font-weight:800;">Param Mittal
+                    <hr>
+                </span><br>
+                <span class="member-name">UI/UX Developer</span>
             </div>
         </div>
         </div>
     
         <section class="section register " data-tooltip="Register" style="margin-bottom:0">
-            <span class="section-heading" style="color:#fff" id="yourself">REGISTER YOURSELF</span>
+            <div class="section-heading" style="color:#fff" id="yourself">REGISTER YOURSELF</div>
             <div class="container-fluid">
-                <div class="row justify-content-center">
-                <form id="registration_form" method="POST" class="col-md-10">
+                <div class="row justify-content-center no-gutter">
+                <form id="registration_form" style="margin-bottom:10px;"  method="POST" class="col-md-10">
                     <div class="form wow fadeIn">
-                        <div class="form-row row justify-content-center">
+                        <div class="form-row row justify-content-center no-gutter">
                             <div class="form-group col-md-4">
                                 <div class="input-field">
                                     <i class="flaticon-edit prefix" style="display:inline"></i>
@@ -247,16 +279,16 @@
                             <div class="form-group col-md-4">
                                 <div class="input-field">
                                     <i class="flaticon-heart prefix" style="display:inline"></i>
-                                    <input id="name" type="text" name="name" class="validate">
+                                    <input id="name" type="text" class="validate">
                                     <label for="name">Donor Name</label>
                                 </div>
                                 <span id="err_name" class="error"></span>
                             </div>
                         </div>
-                        <div class="form-row row justify-content-center">
+                        <div class="form-row row justify-content-center no-gutter">
                             <div class="form-group col-md-8">
                                 <label class="font-weight-bold lab">Course:</label>
-                                <select class="browser-default" id="course" name="course">
+                                <select class="browser-default" id="course">
                                     <option value="" disabled >Choose your Course</option>
                                     <option value="B.Tech" selected>B.Tech</option>
                                     <option value="M.Tech">M.Tech</option>
@@ -266,7 +298,7 @@
                             </div>
                         </div>
             
-                        <div class="form-row row justify-content-center">
+                        <div class="form-row row justify-content-center no-gutter">
                             <div class="form-group col-md-4">
                                 <label class="font-weight-bold lab">Year:</label>
                                 <select class="browser-default" id="number">
@@ -280,7 +312,7 @@
             
                             <div class="form-group col-md-4">
                                 <label class="font-weight-bold lab">Blood Group:</label>
-                                <select id="blood-group" class="browser-default" name="bloodgroup">
+                                <select class="browser-default" id="blood-group">
                                     <option value="" disabled >Choose your Blood Group</option>
                                     <option value="AP" selected>A+</option>
                                     <option value="AN">A-</option>
@@ -296,7 +328,7 @@
             
                         </div>
             
-                        <div class="form-row row justify-content-center">
+                        <div class="form-row row justify-content-center no-gutter">
                             <div class="col-md-2 font-weight-bold gender ">Gender:</div>
                             <p class="col-md-3">
                                 <label>
@@ -312,7 +344,7 @@
                             </p>
                         </div>
 
-                        <div class="form-row row justify-content-center">
+                        <div class="form-row row justify-content-center no-gutter">
                             <div class="col-md-2 font-weight-bold gender ">Hostler:</div>
                             <p class="col-md-3">
                                 <label>
@@ -328,7 +360,7 @@
                             </p>
                         </div>
             
-                        <div class="form-row row justify-content-center">
+                        <div class="form-row row justify-content-center no-gutter">
                             <div class="form-group col-md-4">
                                 <div class="input-field">
                                     <i class="flaticon-mail prefix" style="display:inline"></i>
@@ -343,39 +375,55 @@
                                     <input id="contact_number" type="tel" name="contact" autocomplete="off" class="validate">
                                     <label for="contact_number">Contact No.</label>
                                 </div>
-                                <span id="#err_contact_no" class="error"></span>
+                                <span id="err_contact_number" class="error"></span>
                             </div>
                         </div>
             
                     </div>
-                    <div class="row justify-content-center">
-                        
-                    <button class="btn col-md-2" id = 'register' type="submit">Register</button>
+                    <div class="row justify-content-center no-gutter">
+                             <div class="g-recaptcha" data-sitekey="6LccApsUAAAAAAkUKhG42e22DoKPBslPjnIVqpY2"></div>
+                        <div class="col-md-3" style="text-align:center;">
+                            <button class="btn reg-btn" id = 'register'>Register</button></div>
                     </div>
+                       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                 </form>
+                </div>
+                <div class="mobile row justify-content-center no-gutter">
+                    
+                        <div class="col-12" style="margin:10px 0px;"><span >Site Donated by</span></div>
+                        <div class="col-12">
+                            <div class="row justify-content-center no-gutter">
+                                <div class="col-2" style="padding: 0"><img src="assets/silogo-white.svg"></div>
+                                 <div class="col-4" style="padding: 0; text-align: left;"><a href="http://silive.in/" style="color:#fff;"><span id="si">SOFTWARE
+                             INCUBATOR</span></a>
+                            </div></div>
+                        
+                        </div>
                 </div>
             </div>
 
-            <div id="sdc">
-                    <a href="http://www.silive.in" target="_blank" style="color: black;">
-                      <span>Site Donated by</span>
-                      <br>
-                      <img src="assets/SILOGO.svg">
-                      <span id="si">SOFTWARE <br> INCUBATOR</span>
-                    </a>
-                  </div>
+            
             
             </section>
+            
+        </div>
+        <div  class="desktop">
+        
+                <span>Site Donated by</span>
+                <br>
+                <img src="assets/SILOGO.svg">
+                <a href="http://silive.in/" style="color:#000;" ><span id="si">SOFTWARE
+                    <br> INCUBATOR</span></a>
+            
         </div>
         
-       
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/scrolloverflow.min.js"></script>
         <script src="js/fullpage.js"></script>
         <script src="js/slick.min.js"></script>
-        <script type="text/javascript" src="js/vanilla-tilt.babel.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
         <script type="text/javascript" src="js/vanilla-tilt.babel.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -401,16 +449,18 @@
                 $('#fullpage').fullpage({
                     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                     navigation:true,
-                    responsiveWidth: 768,
-                    scrollOverflow: true
+                    anchors: ['home','facts','gallery','team','register']   
                 });
             });</script>
+            <script type="text/javascript">
+                var scene = document.getElementById('scene');
+                var parallaxInstance = new Parallax(scene);
+            </script>
             <script>
-            $('.js-tilt').tilt({
-                    glare: true,
-                    maxGlare: .5,
-                    perspective: 3000    
-                })
+            if ($(window).width() < 768) { 
+            
+                $('#fullpage').removeAttr('id'); 
+                }
         </script>
         
     </body>

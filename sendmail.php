@@ -18,20 +18,20 @@
     )
 );        
     $mail->AddAddress($email,'');
-    $mail->Username="developersmail7@gmail.com";  
-    $mail->Password="devmeat99";            
-    $mail->SetFrom('developersmail7@gmail.com','');
-    $mail->AddReplyTo("developersmail7@gmail.com","");
+    $mail->Username="noreply.sdc.si@gmail.com";  
+    $mail->Password="softw@reincub@tor@new";            
+    $mail->SetFrom('noreply.sdc.si@gmail.com','');
+    $mail->AddReplyTo("noreply.sdc.si@gmail.com","");
     $mail->Subject    = $subject;  
     $mail->Body = "hello this is my message"; 
     $mail->MsgHTML($message);
     $bool = $mail->send();
     //return $bool;
     if(!$bool) {
-     echo 'Message could not be sent.';
-     echo 'Mailer Error: ' . $mail->ErrorInfo;
-     exit;
-   }
+     return "Mail could not be sent";
+     
+   } else {
+        return "Mail sent successfully";    }
   } 
 
 ?>

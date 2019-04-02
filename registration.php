@@ -1,9 +1,12 @@
+
 <?php
 
 	require('config.php');
 	require('sendmail.php');
+
 	if ($_SERVER["REQUEST_METHOD"] == "POST")
 	{
+    
 //        var_dump($_POST['name']);
 //        var_dump($_POST['student_no']);
 //        var_dump($_POST['email']);
@@ -21,7 +24,16 @@
 		$hostler = $_POST['hostler'];
 		$bloodgroup = $_POST['bloodgroup'];
 		$error;
-		
+		 $secretkey="6LccApsUAAAAABt5QTeD6YzztJ62yyYXsVp8rS_7";
+      $responsekey=$_POST['g-recaptcha-response'];
+    $url="https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$responsekey";
+//    console.log($url);
+    $response=file_get_contents($url);
+    $response=json_decode($response,true);
+   
+    if($response['success']== true)
+    {
+       
 		if(empty($name))
 		{
 			$error['name'] = 'Name cannot be empty';
@@ -112,8 +124,10 @@
 	           		$message = file_get_contents('mail_templates/bdc.html');//replace the mail template
 	          		$message = str_replace('%name%', $name, $message); //for sending email purpose
 	          		$subject="Welcome";
-	          		send_mail($email,$subject,$message);
-            	}  
+	          		$error['mail'] = send_mail($email,$subject,$message);
+                    
+
+          	     }  
 
 	           
 			}
@@ -124,8 +138,13 @@
 		}
 
 		echo json_encode($error);
+    }
+    
+     
+
+}
 		
-	}
-include('index.php');
+	
+
 	
 ?>

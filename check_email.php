@@ -25,9 +25,14 @@
 		{
 			$student_no = $_POST['student_no'];
 			$stmt = $pdo->prepare("SELECT student_no FROM users  WHERE student_no = :student_no");
+            $stmt12 = $pdo->prepare("SELECT COUNT( DISTINCT student_no ) FROM users");
 			$stmt->bindparam(":student_no" , $student_no);
 			$stmt->execute();
+            $stmt12->execute();
 			$count=$stmt->fetch(PDO::FETCH_ASSOC);
+            	$count12=$stmt12->fetch(PDO::FETCH_ASSOC);
+            
+				$response['count'] = $count12;
 			if($count > 0)
 			{
 				$response['status'] = 0;
