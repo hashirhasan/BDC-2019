@@ -322,8 +322,8 @@ $(document).ready(function () {
         
 
                         $('#loader').hide();
-                          $("#loader").removeClass("afterloader");
-           $("#loader").addClass("preloader");
+//                          $("#loader").removeClass("afterloader");
+//           $("#loader").addClass("preloader");
 
                     }
 

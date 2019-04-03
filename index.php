@@ -296,7 +296,7 @@
                             <div class="form-group col-md-4">
                                 <div class="input-field">
                                     <i class="flaticon-heart prefix" style="display:inline"></i>
-                                    <input id="name" type="text" class="validate">
+                                    <input id="name" type="text" class="validate" autocomplete="off">
                                     <label for="name">Donor Name</label>
                                 </div>
                                 <span id="err_name" class="error"></span>
@@ -381,7 +381,7 @@
                             <div class="form-group col-md-4">
                                 <div class="input-field">
                                     <i class="flaticon-mail prefix" style="display:inline"></i>
-                                    <input id="email" type="text" class="validate ">
+                                    <input id="email" type="text" class="validate " autocomplete="off">
                                     <label for="email">E-mail</label>
                                 </div>
                                 <span id="err_email" class="error"></span>
@@ -398,9 +398,9 @@
             
                     </div>
                     <div class="row justify-content-center no-gutter">
-                             <div class="g-recaptcha" data-sitekey="6LccApsUAAAAAAkUKhG42e22DoKPBslPjnIVqpY2"></div>
+                             <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LccApsUAAAAAAkUKhG42e22DoKPBslPjnIVqpY2"></div>
                         <div class="col-md-3" style="text-align:center;">
-                            <button class="btn reg-btn" id = 'register'>Register</button></div>
+                            <button class="btn reg-btn" id = 'register' disabled>Register</button></div>
                     </div>
                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                 </form>
