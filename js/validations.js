@@ -7,6 +7,15 @@ function recaptchaexpired() {
 };
 
 $(document).ready(function () {
+    
+   
+    $.ajax({ 
+            url: "check_email.php",
+            success: function (result) {
+                 var result = $.parseJSON(result);
+                console.log("number of registrations ->",result.count['COUNT(student_no)']);
+            }
+          });
 
     var bool_email = true;
     var bool_student_no = true;
@@ -240,6 +249,8 @@ $(document).ready(function () {
     }
 
     $('#register').on('click', function () {
+         $("#loader").removeClass("preloader");
+           $("#loader").addClass("afterloader");
         var test1 = validate_student_no();
         var test2 = validate_name();
         var test3 = validate_email();
@@ -263,12 +274,8 @@ $(document).ready(function () {
              var response = grecaptcha.getResponse();
             
             var datastring = 'name=' + name + '&email=' + email + '&student_no=' + student_no + '&year=' + year + '&course=' + course + '&contact=' + contact + '&gender=' + gender + '&hostler=' + hostler + '&bloodgroup=' + bg + '&g-recaptcha-response='+response;
-                
-//            else{
-//                var datastring = 'name=' + name + '&email=' + email + '&student_no=' + student_no + '&year=' + year + '&course=' + course + '&contact=' + contact + '&gender=' + gender + '&hostler=' + hostler + '&bloodgroup=' + bg;
-//            }
-          
-            $('.loader').show();
+      
+            $('#loader').show();
 //            debugger
             $.ajax({
                 type: "POST",
@@ -312,12 +319,11 @@ $(document).ready(function () {
                             $("#err_student_no").text(result.student_no);
                             $("#err_student_no").fadeIn("2500").show();
                         }
-                
-//                     swal('Registerd','you are successfully registered...please verify your email to login!','success'). then(function(){
-//  window.location = "registration.php";
-//             })
+        
 
-//                        $('.loader').hide();
+                        $('#loader').hide();
+                          $("#loader").removeClass("afterloader");
+           $("#loader").addClass("preloader");
 
                     }
 

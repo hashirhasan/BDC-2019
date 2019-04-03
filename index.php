@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
     
+    
+      
     <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/flaticon.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,9 +21,24 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-   
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+   
+
     <body class="fp-auto-width-responsive">
+        <style type="text/css">
+  body {
+    overflow: hidden;
+  }
+        </style>
+          <!-- Preloader -->
+        <div class="loader preloader heartBeat" id='loader'>
+                <div class="pulse">
+                </div>
+                  <div class="heart"></div>
+            </div>
+          
             <!-- <div id="sdc">
                     <a href="http://www.silive.in" target="_blank" style="color: black;">
                       <span>Site Donated by</span>
@@ -56,7 +73,7 @@
                    <h1 class="landing-title">
                        CAMP
                    </h1>
-                   <h3 class="landing-text">9th April 2019</h3>
+                   <h3 class="landing-text">16th April 2019</h3>
                    <h3 class="landing-text">MECHANICAL BLOCK</h3>
                 
                    <a class="btn col-md-6 hvr-pulse-grow" href="#register">Donate</a>
@@ -192,7 +209,7 @@
         <div class="row justify-content-center no-gutter">
             <div class="col-md-2 col-sm-5 col-5 team-member">
                 <img src="assets/parashar.jpg" class="team-img">
-                <span class="member-name" style="font-weight:800;">Dr. V.K.Prashar
+                <span class="member-name" style="font-weight:800;">Dr. V.K.Parashar
                     <hr>
                 </span>
             </div>
@@ -429,6 +446,15 @@
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/validations.js"></script>
         <script>
+          
+  $(window).on('load', function() {
+        
+    $('#loader').fadeOut(); 
+//    $('#loader').delay(700).fadeOut('slow'); 
+//    $('body').delay(500).css({'overflow':'visible'});
+  }) 
+
+            
         $(document).ready(function () {
               $('.single-item').slick({
                 dots: true,
