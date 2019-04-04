@@ -47,7 +47,7 @@
 		{
 			$error['student_no'] = 'Student number cannot be empty';
 		}
-		else if(!preg_match('/(^[1][3-7][0-9]{5})/', $student_no))/* regex for student number */
+		else if(!preg_match('/(^[1][5-8][0-9]{5})/', $student_no))/* regex for student number */
 		{
 			$error['student_no'] = 'Invalid student number';
 		}
