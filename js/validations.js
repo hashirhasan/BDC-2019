@@ -1,10 +1,8 @@
-function recaptchaCallback() {
+      function recaptchaCallback() {
     $('#register').removeAttr('disabled');
 };
 
-function recaptchaexpired() {
-    $('#register').attr('disabled','disabled');
-};
+
 
 $(document).ready(function () {
     
@@ -210,7 +208,7 @@ $(document).ready(function () {
             datatype: "json",
             cache: false,
             success: function (result) {
-                console.log(result);
+              
                 var result = $.parseJSON(result);
                
                 if (result.status == 0) {
@@ -259,6 +257,7 @@ $(document).ready(function () {
 
         if (test1 && test2 && test3 && test4 && bool_contact && bool_email && bool_student_no) {
 
+      
             var name = $('#name').val();
             var email = $('#email').val();
             var student_no = $('#student_no').val();
