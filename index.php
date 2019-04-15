@@ -74,7 +74,7 @@
                        CAMP
                    </h1>
                    <h3 class="landing-text">23rd April 2019</h3>
-                   <h3 class="landing-text">ME BLOCK</h3>
+                   <h3 class="landing-text">MECHANICAL ENGG. BLOCK</h3>
                 
                    <a class="btn col-md-6 hvr-pulse-grow" href="#register">Donate</a>
                    
@@ -191,16 +191,16 @@
             <div class="col-md-6 col-10">
                 <div class="single-item">
                     <div>
-                        <img src="assets/gallery/1-min.png" alt="img" class="gallery-img">
+                        <img src="assets/gallery/1-min.jpg" alt="img" class="gallery-img">
                     </div>
                     <div>
-                        <img src="assets/gallery/2-min.png" class="gallery-img">
+                        <img src="assets/gallery/2-min.jpg" class="gallery-img">
                     </div>
                     <div>
-                        <img src="assets/gallery/3-min.png" class="gallery-img">
+                        <img src="assets/gallery/3-min.jpg" class="gallery-img">
                     </div>
                     <div>
-                        <img src="assets/gallery/4-min.png" class="gallery-img">
+                        <img src="assets/gallery/4-min.jpg" class="gallery-img">
                     </div>
                 </div>
             </div>
@@ -217,7 +217,7 @@
         <div class="row justify-content-center no-gutter">
             <div class="col-md-2 col-sm-5 col-5 team-member">
                 <img src="assets/parashar.jpg" class="team-img">
-                <span class="member-name" style="font-weight:800;">Dr. V.K.Parashar
+                <span class="member-name" style="font-weight:800;">Prof. V.K.Parashar
                     <hr>
                 </span>
                 <span class="member-name">Organising Head</span>
@@ -261,7 +261,7 @@
                 <span class="member-name">UI/UX Developer</span>
             </div>
             <div class="col-md-2 col-sm-5 col-5 team-member">
-                <img src="assets/suyash.jpeg" class="team-img">
+                <img src="assets/suyash.jpg" class="team-img">
                 <span class="member-name" style="font-weight:800;">Suyash Srivastava
                     <hr>
                 </span>
