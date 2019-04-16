@@ -34,7 +34,7 @@
     if($response['success']== true)
     {
        
-		if(empty($name))
+			if(empty($name))
 		{
 			$error['name'] = 'Name cannot be empty';
 		}
@@ -42,6 +42,8 @@
 		{
 			$error['name'] = 'Invalid name';
 		}
+		
+        
 		
 		if(empty($student_no))
 		{

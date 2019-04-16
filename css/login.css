@@ -1,0 +1,129 @@
+body{
+	background-color: #3DA2F8;
+	background-image: ;
+    background-size: cover;
+    /*height: 100vh;*/
+    background-attachment: fixed;
+}
+.container{
+	width:360px;
+	padding: 10px;
+	margin: auto;
+	margin-left: 36%; 
+	margin-top: 8%; 
+    position:relative;
+}
+.signup{
+	position: relative;
+	width: 80%;
+	height: auto;
+	margin: 0 auto 100px;
+	background-color: transparent;
+	background-color:#CEC9C7;
+	padding: 0px 45px 55px 45px;
+	text-align: center;
+	margin-top: 12%;
+	
+}
+.signup h4{
+	font-family: arial;
+	display: inline-block;
+	padding: 10px 40px 0px 40px;
+	position: relative;
+	font-size: 18px;
+	
+}
+.signup h5{
+	margin-top: 0%;
+}
+.signup h4 a{
+	text-decoration: none;
+	color: white;
+}
+.signup h4 a:hover{
+	color:  #f4511e;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+.signup input{
+	font-family: arial;
+	background: white;
+	width: 100%;
+	border: 0;
+	margin: 0 5px 15px;
+	padding: 14px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.signup button{
+	font-family: arial;
+	font-size: 14px;
+	background: green;
+	width: 100%;
+	border:0;
+	padding: 15px;
+	color: white;
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px 20px 20px 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.line::after{
+	content: '';
+	display: block;
+	height: 2px;
+	background-color: black;
+	/*position: absolute;*/
+	top: 35px;
+	width: 20%;
+	transition: all 0.2s ease-in;
+}
+.line:hover::after{
+	width:100%;
+
+
+}
+
+
+.radiobtn{
+    
+    margin-left: 45%;
+    margin-top: 3.5%;
+    position: absolute;
+    z-index: 9;
+}
