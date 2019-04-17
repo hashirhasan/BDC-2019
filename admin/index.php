@@ -9,7 +9,7 @@
 <div class="col-4">
 </div>
 <div class="col-4">
-<h1>Total Registrations:<span  style="color:red;"><?php echo $data_register['total']; ?></span></h1>
+<h1 style="font-size:2.0833333333333335vw">Total Registrations:<span  style="color:#Af0e20;"><?php echo $data_register['total']; ?></span></h1>
 </div>
 <div class="col-4">
 

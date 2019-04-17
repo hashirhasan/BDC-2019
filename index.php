@@ -375,7 +375,7 @@
                         </div>
 
                         <div class="form-row row justify-content-center no-gutter">
-                            <div class="col-md-2 font-weight-bold gender ">Hostler:</div>
+                            <div class="col-md-2 font-weight-bold gender ">Hosteller:</div>
                             <p class="col-md-3">
                                 <label>
                                     <input class="with-gap" type="radio" name="inlineRadioOption" id="Hosteller" value="Hosteller" checked />

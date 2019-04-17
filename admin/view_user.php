@@ -1,14 +1,12 @@
  <?php include "include/adminheader.php"?>
 
-   
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-8">
+ <div style="margin:auto; padding-bottom:40px;">  
 <style>
-  td,th{
+  table,td,th{
             padding: 15px;
         }
         
+/*
      
  #appadd {
     white-space: nowrap;
@@ -17,32 +15,37 @@
     height: 40px;
     text-overflow: ellipsis; 
 }
+*/
 
 table.gridtable {
 	
 	font-family: tahoma;
 	line-height:15px;
-	font-size:12px;
+	font-size:0.78125vw;
 	color:#333333;
 	border-width: 1px;
-	
+	overflow-x: auto;
 	border-color: #666666;
 	border-collapse: collapse;
+	margin:auto;
 	
+	width="71.61458333333333vw";
 }
 table.gridtable th {
-	border-width: 1px;
+	
 	border-style: solid;
 	border-color: #666666;
 	color:#FFFFFF;
 	background-color: #5A94CE; /*#66CCFF*/
-	
+	font-size:0.78125vw;
+/*	margin-left: auto;*/
 }
 table.gridtable td {
-	border-width: 1px;
+	
 	border-style: solid;
 	border-color: #666666;
 	background-color: transparent;
+	font-size:0.78125vw;
 	
 }
 
@@ -51,17 +54,17 @@ table.gridtable td {
 
 
 
-<table style="margin-left:-100px;" width="1100px" style="table-layout:fixed;" class="gridtable" >
+<table  style="table-layout:fixed;" class="gridtable" >
                     <thead>
                     <tr>
-                        <th width="110px">Student No</th>
-                        <th width="200px">Donar Name</th>
+                        <th >Student No</th>
+                        <th >Donar Name</th>
                         <th>Course</th>
                         <th>Year</th>
                         <th >Blood Group</th>
                         <th >Gender</th>
                          <th>Hosteller</th>
-                         <th width="200px">Email Id</th>
+                         <th>Email Id</th>
 						<th>Contact No</th>
                         </tr>
                   </thead>
@@ -90,7 +93,7 @@ table.gridtable td {
 								echo"<td id='appadd'>{$course}</td>";
 								echo"<td id='appadd'>{$year}</td>";
 								echo"<td id='appadd'>{$bloodgroup}</td>";
-								echo"<td id='appadd' >{$gender}</td>";
+								echo"<td id='appadd'>{$gender}</td>";
 								echo"<td id='appadd' >{$hostler}</td>";
 								echo"<td id='appadd'>{$email}</td>";
 								echo"<td id='appadd' >{$contact}</td>";
@@ -103,8 +106,8 @@ table.gridtable td {
                     </table>
 
 					
-					  </div>
-                <div class="col-3"></div>
+</div>	
+           
              </div>
     </div>
     </div>

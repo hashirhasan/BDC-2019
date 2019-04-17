@@ -1,17 +1,14 @@
 body{
-	background-color: #3DA2F8;
-	background-image: ;
-    background-size: cover;
-    /*height: 100vh;*/
-    background-attachment: fixed;
+	background-color: white;
+	
 }
 .container{
 	width:360px;
 	padding: 10px;
 	margin: auto;
-	margin-left: 36%; 
+/*	margin-left: %; */
 	margin-top: 8%; 
-    position:relative;
+/*    position:relative;*/
 }
 .signup{
 	position: relative;
@@ -19,10 +16,11 @@ body{
 	height: auto;
 	margin: 0 auto 100px;
 	background-color: transparent;
-	background-color:#CEC9C7;
+	background-color:darkgrey;
 	padding: 0px 45px 55px 45px;
 	text-align: center;
 	margin-top: 12%;
+	border-radius: 3%;
 	
 }
 .signup h4{
@@ -103,27 +101,5 @@ body{
   opacity: 1;
   right: 0;
 }
-.line::after{
-	content: '';
-	display: block;
-	height: 2px;
-	background-color: black;
-	/*position: absolute;*/
-	top: 35px;
-	width: 20%;
-	transition: all 0.2s ease-in;
-}
-.line:hover::after{
-	width:100%;
 
 
-}
-
-
-.radiobtn{
-    
-    margin-left: 45%;
-    margin-top: 3.5%;
-    position: absolute;
-    z-index: 9;
-}

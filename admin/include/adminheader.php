@@ -27,7 +27,7 @@ else if(!isset($_SESSION['user_role']))
               box-sizing: border-box;
             }
             body {
-            background:#083D77;
+            background:white;
             font-family: arial;
             padding: 10px;
             }
@@ -36,11 +36,13 @@ else if(!isset($_SESSION['user_role']))
            
 		}
       ul li {
-      	 background-color:#2F2F2F;
+      	 background-color:#f1f1f1;
       	width:10.7vw;
+	     border-radius: 3%;
       	float: left;
       	padding: 0.625vw;
         text-align: center; 
+		  
           
      
       }
@@ -55,18 +57,22 @@ else if(!isset($_SESSION['user_role']))
             
         }
         ul li a:hover{
-            color:#DA4167;
+            color:#Af0e20;
         }
       
          ul li a{
        text-decoration: none;
-       color: white;
+       color: black;
        display: block;
              text-transform: uppercase;
+			 font-size:  1.0416666666666667vw;
       }
    .admin{
     
        padding: 50px 50px 0px 50px;
+	   background: #f1f1f1;
+	   border-radius: 3%;
+/*	   margin-top: 80px;*/
            
         } 
  
@@ -136,7 +142,7 @@ text-overflow: ellipsis;
  
     background-color: white;
     margin:5% 100px 0px 130px;
-    border: 2px solid black;
+  
 }
 
         
@@ -147,12 +153,10 @@ text-overflow: ellipsis;
 <body>
     <div class="navbar" style="padding:30px 0px 10px 20px;">
     <ul>
-		 <li style="margin-left:9vw; padding:15px;"><a href="./index.php">Home</a></li>
-         <li style="margin-left:26vw;"><a href="view_user.php">view registration <i class="fas fa-user"></i></a>
-          <li style="margin-left:23.125vw;"> <a href=""><?php echo $_SESSION['username']; ?> <i class="fas fa-unlock-alt"></i> <i style=" margin-left:10px;"class="fas fa-caret-down"></i></a>
-              <ul>
-                <li><a href="logout.php">Logout <i class="fas fa-lock"></i></a></li>
-               </ul>
+		 <li style="margin-left:15vw; padding: 1.0416666666666667vw;"><a href="./index.php">Home</a></li>
+         <li style="margin-left:19vw;"><a href="view_user.php">view registration <i class="fas fa-user"></i></a>
+          <li style="margin-left:17.125vw;"> <a href="logout.php">LOGOUT<i style="margin-left:10px"class="fas fa-lock"></i></a>
+            
         </li>
     </ul>
     </div>
@@ -160,6 +164,6 @@ text-overflow: ellipsis;
     <div class="para">
      <div class="admin" >
  
-   <h1 style="text-align:center;">WELCOME TO ADMIN <small  style="text-transform: capitalize;color:red;">  <?php echo $_SESSION['username']; ?></small></h1><br>
+   <h1 style="text-align:center; font-size:2.0833333333333335vw;">WELCOME TO ADMIN <small  style="text-transform: capitalize;color:#Af0e20;">  <?php echo $_SESSION['username']; ?></small></h1><br>
             <hr style="width:43.75vw;background-color:blue; position:absolute; margin-left:14.37vw;">
              <br>

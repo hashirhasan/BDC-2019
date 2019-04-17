@@ -63,15 +63,7 @@ else
         <title>login</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../css/login.css">
-             <style>
-            .logo{
-            position: absolute;
-            padding: 3px 0px 0px 8px; 
-            height: 70px;
-            width: 150px;
-            top: 3px;
-        }
-            </style>
+             
         </head>
         <body>
             
@@ -79,7 +71,7 @@ else
           
         <div class="signup">
               
-        <h4><a style="display: inline-block; color: red; border-radius: 5px;" href="login.php" class="line">Login</a></h4>
+        <h4 style="display: inline-block; color:black; border-radius: 5px;" >LOGIN</h4>
         
             <?php if(isset($notlogin)){echo $notlogin;}  ?>
         <form action="" method="post" enctype="multipart/form-data">
