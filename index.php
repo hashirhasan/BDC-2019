@@ -76,7 +76,7 @@
                    <h3 class="landing-text">23rd April 2019</h3>
                    <h3 class="landing-text">MECHANICAL ENGG. BLOCK</h3>
                 
-                   <a class="btn col-md-6 hvr-pulse-grow" href="#register">Donate</a>
+                   <a class="btn col-md-6 hvr-pulse-grow" href="#register1">Donate</a>
                    
                 </div>
                 <div class="col-md-5" style="overflow:-webkit-paged-y;" data-tilt  data-tilt-max="10" data-tilt-speed="200" data-tilt-perspective="300">
@@ -291,7 +291,7 @@
         </div>
         </div>
     
-        <section class="section register " data-tooltip="Register" style="margin-bottom:0">
+        <section  id="register1" class="section register " data-tooltip="Register" style="margin-bottom:0">
             <div class="section-heading" style="color:#fff" id="yourself">REGISTER YOURSELF</div>
             <div class="container-fluid">
                 <div class="row justify-content-center no-gutter">
