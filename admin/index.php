@@ -1,4 +1,5 @@
- <?php include "include/adminheader.php"?>    <!--navbar of the admin page  -->
+
+<?php include "include/adminheader.php"?>    <!--navbar of the admin page  -->
   
 <?php
     $result_count_register=mysqli_query($connection,"SELECT count(*) as total from users");

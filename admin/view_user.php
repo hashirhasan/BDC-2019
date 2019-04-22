@@ -1,6 +1,7 @@
  <?php include "include/adminheader.php"?>
 
- <div style="margin:auto; padding-bottom:40px;">  
+ <div style="margin:auto; padding-bottom:80px;">
+	   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
   table,td,th{
             padding: 15px;
@@ -29,7 +30,7 @@ table.gridtable {
 	border-collapse: collapse;
 	margin:auto;
 	
-	width="71.61458333333333vw";
+	/* width:"71.61458333333333vw"; */
 }
 table.gridtable th {
 	
@@ -104,8 +105,11 @@ table.gridtable td {
                     ?>
                     </tbody>
                     </table>
-
-					
+	 <div style="padding-top:25px; margin-left:55vw;">
+	 <form action="excel.php" method="post">
+    <button type="submit"  name="submit"class="btn btn-primary">Export_Excel</button>
+	 </form>
+	 </div>
 </div>	
            
              </div>

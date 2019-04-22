@@ -146,7 +146,7 @@ text-overflow: ellipsis;
 }
 
         
-           text-transform: capitalize
+  
 
 	</style>
 </head>
@@ -154,7 +154,7 @@ text-overflow: ellipsis;
     <div class="navbar" style="padding:30px 0px 10px 20px;">
     <ul>
 		 <li style="margin-left:15vw; padding: 1.0416666666666667vw;"><a href="./index.php">Home</a></li>
-         <li style="margin-left:19vw;"><a href="view_user.php">view registration <i class="fas fa-user"></i></a>
+         <li style="margin-left:19vw;"><a href="view_user.php">View Registration <i class="fas fa-user"></i></a>
           <li style="margin-left:17.125vw;"> <a href="logout.php">LOGOUT<i style="margin-left:10px"class="fas fa-lock"></i></a>
             
         </li>

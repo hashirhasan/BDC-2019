@@ -23,6 +23,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/loader.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+	
+	</style>
 </head>
    
 
@@ -413,7 +416,7 @@
                     <div class="row justify-content-center no-gutter">
                              <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LccApsUAAAAAAkUKhG42e22DoKPBslPjnIVqpY2"></div>
                         <div class="col-md-3" style="text-align:center;">
-                            <button class="btn reg-btn" id = 'register' disabled>Register</button></div>
+                            <button class="btn reg-btn" id = 'register'>Register</button></div>
                     </div>
                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                 </form>
